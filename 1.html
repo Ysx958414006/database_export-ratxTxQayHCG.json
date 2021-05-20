@@ -143,20 +143,20 @@
             <li>Wronsky行列式：<img src="3.7.png" alt=""><img src="3.8.png" alt=""></li>
             <li>n阶齐次线性方程一定存在n个线性无关的解</li>
             <li>通解基本结构：<img src="3.9.png" alt="">为一组线性无关的解（基本解组）</li>
-            <li></li>
+            <li><img src="3.10.png" alt=""></li>
         </ul>
     </li>
     <li>非齐次线性微分方程解与常数变易法
         <ul>
             <li>解的和、差亦为原方程解</li>
-            <li>通解基本结构：</li>
+            <li>通解基本结构：<img src="3.11.png" alt=""></li>
             <li>常数变易法：
                 <ul>
-                    <li></li>
-                    <li>对原微分方程求n-1阶导数，并代入原方程，得到线性方程组：</li>
-                    <li>解线性方程组，得到</li>
-                    <li></li>
-                    <li>得到通解：</li>
+                    <li><img src="3.12.png" alt=""></li>
+                    <li>对原微分方程求n-1阶导数，并代入原方程，得到线性方程组：<img src="3.13.png" alt=""></li>
+                    <li>解线性方程组，得到<img src="3.14.png" alt=""></li>
+                    <li><img src="3.15.png" alt="">，<img src="3.16.png" alt="">的代数余子式，可据此快速求得（如果矩阵小的话）</li>
+                    <li>得到通解：<img src="3.17.png" alt=""></li>
                     <li>若要得到特解，即给出γi的值</li>
                 </ul>
             </li>
@@ -165,13 +165,55 @@
 </ul>
 <h3>常系数线性微分方程的解法</h3>
 <ul>
-    <li>复值函数：</li>
+    <li>复值函数：<img src="3.18.png" alt=""></li>
     <li>复值指数函数：
         <ul>
-            <li></li>
-            <li>欧拉公式：</li>
+            <li><img src="3.19.png" alt=""></li>
+            <li>欧拉公式：<img src="3.20.png" alt=""></li>
         </ul>
     </li>
+    <li>复值解：<img src="3.21.png" alt="">,z(t)为定义在[a,b]上以t为实变量的复值函数<ul>
+        <li>
+            当f(t)=0(齐次)，ai（t）均为实值函数，则复值函数的实部、虚部、共轭复数也均是原微分方程的解
+        </li>
+        <li>当<img src="3.22.png" alt="">，ai（t）均为实值函数，则复值函数的<ul>
+            <li>实部U（t）为<img src="3.23.png" alt=""></li>
+            <li>虚部V（t）为<img src="3.24.png" alt=""></li>
+        </ul></li>
+    </ul></li>
+    <li>常系数线性方程求解<ul>
+        <li><img src="3.25.png" alt=""></li>
+        <li><img src="3.26.png" alt=""></li>
+        <li>解出方程的n个解（包括重根）<img src="3.27.png" alt=""></li>
+        <li>基础解组：<img src="3.28.png" alt=""></li>
+        <li>构成通解：<img src="3.29.png" alt=""></li>
+    </ul></li>
+    <li>欧拉方程求解<ul>
+        <li><img src="3.30.png" alt=""></li>
+        <li><img src="3.31.png" alt=""></li>
+        <li>解出n个解（包括重根）<img src="3.32.png" alt=""></li>
+        <li>基础解组：<img src="3.33.png" alt=""></li>
+        <li>构成通解：<img src="3.34.png" alt=""></li>
+    </ul></li>
+    <li>常系数非齐次线性微分方程求解<ul>
+        <li><img src="3.35.png" alt=""></li>
+        <li>比较系数法：<ul>
+            <li><img src="3.36.png" alt=""></li>
+            <li>基本解组：<img src="3.37.png" alt=""></li>
+            <li>设方程有形式解：<img src="3.38.png" alt="">(k是λ0作为方程根时的重数，非根即为0)</li>
+            <li>代入原方程，比较同次幂系数，解出未知系数bi</li>
+            <li>构成通解：<img src="3.39.png" alt=""></li>
+        </ul></li>
+        <li>欧拉变换：<ul>
+            <li><img src="3.40.png" alt=""></li>
+            <li>基本解组：<img src="3.41.png" alt=""></li>
+            <li><img src="3.42.png" alt="">(k为α+iβ作为方程特征根的重数)</li>
+            <li>代入原方程，比较等式两侧cost和sint的系数解出P（t）、Q（t），P（t）、Q（t）次数与A（t）、B（t）次数最大值相同</li>
+            <li>构成通解：<img src="3.43.png" alt=""></li>
+            <li>当仅含sin或cos项时，将其扩展为<img src="3.44.png" alt="">的形式，即<img src="3.45.png" alt="">之后参照比较系数法求解，然后取实/虚部作为特解。</li>
+        </ul></li>
+        
+    </ul></li>
 </ul>
 
 
