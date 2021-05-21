@@ -88,101 +88,31 @@
 
 
 
-    <h3>解的存在唯一性定理与逐步逼近法</h3>
-    <ul>
-        <li>讨论初值问题：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.22.png?sign=e422f3603bcfbfcefdd2ccaaede35ff4&t=1621589713" alt=""></li>
-        <li>Lipschitz条件：f(x,y)为处于矩阵域<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.23.png?sign=5bd2db8ef1dae68d48dc6b9c751b741e&t=1621589724" alt="">上的连续函数，<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.24.png?sign=b8c9ad1e13f510edf46417a1cde481d2&t=1621589740" alt=""></li>
-        <li>f(x,y)满足Lipschitz条件，则初值问题在<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.25.png?sign=abda7ed643adf3ede9f87ac3fa810097&t=1621589773"/>上的解存在且唯一，这里 <img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.26.png?sign=9e662f1e2e42b481a72dd0d1ca28fc9f&t=1621589807" alt="">
-        <ul>
-            <li>判定：fy 存在且有界或fy连续</li>
-        </ul></li>
-        <li>证明思路：<ol>
-            <li>
-                初值问题的解等价于微分方程<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.27.png?sign=158017bb129ad082282526bd20dac4b3&t=1621589820" alt="">的连续解
-            </li>
-            <li>构造近似解函数列{φn(x)}</li>
-            <li>函数列{φn(x)}在[x0-h,h0+h]上一致收敛于φ(x)</li>
-            <li>φ(x)是积分方程定义于[x0-h,h0+h]上的连续解且唯一</li>
-        </ol></li>
-
-    </ul>
-    <h3>解的延拓</h3>
-    <ul>
-        <li>根据解的存在唯一性定理，其解的存在唯一区间为|x-x0|<=h而h可能随<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.28.png?sign=15c57b0fc26fa631eb80c5d94e56f991&t=1621589832" alt="">增大而减小，即定义域的扩展可能会导致解的存在唯一空间减小。</li>
-        <li>解的延拓定理：f(x,y)在有界区域G上连续，且满足局部Lipschitz条件，则方程过<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.29.png?sign=6c53b4f52214e02304df11e07d2ed1c7&t=1621589846" alt="">的解y=φ(x)可延拓，直至(x,φ(x))无限接近G边界</li>
-    </ul>
-    <h3>解对初值的性质</h3>
-    <ul><li>
-        考虑初值时，可将解看作<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.30.png?sign=16bfcd17aa11ef01a05dc365eb926ba8&t=1621589875" alt="">
-    </li>
-    <li>解关于初值的对称性：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.31.png?sign=10933399aba7d895143348aeedacc4af&t=1621589889" alt=""></li>
-    <li>解对初值的连续性：<ul>
-        <li>解对初值的连续性定理：
-            <ul>
-                <li>解对初值的连续性定理:f(x,y)在区域内连续则其解函数<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.32.png?sign=bc1e90f203033e4d4d055e5a2607bfe8&t=1621589922" alt="">在它的存在范围内连续</li>
-                <li>解对初值和参数的连续性定理：f(x,y,λ)在区域内连续则其解函数<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.33.png?sign=783fff360f605d82c00f571ad0b7effd&t=1621589937" alt="">在它的存在范围内连续</li>
-                <li>解对初值可微：f(x,y)及关于y的偏导都在区域G内连续，则解<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.34.png?sign=675106acc4e1708544ab80faeb516963&t=1621589951" alt="">连续可微</li>
-            </ul>
-        </li>
-    </ul></li>
-</ul>
+    <h3>解的存在唯一性定理与逐步逼近法</h3><ul><li>讨论初值问题：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.22.png?sign=e422f3603bcfbfcefdd2ccaaede35ff4&t=1621589713" alt=""></li><li>Lipschitz条件：f(x,y)为处于矩阵域<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.23.png?sign=5bd2db8ef1dae68d48dc6b9c751b741e&t=1621589724" alt="">上的连续函数，<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.24.png?sign=b8c9ad1e13f510edf46417a1cde481d2&t=1621589740" alt=""></li><li>f(x,y)满足Lipschitz条件，则初值问题在<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.25.png?sign=abda7ed643adf3ede9f87ac3fa810097&t=1621589773"/>上的解存在且唯一，这里 <img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.26.png?sign=9e662f1e2e42b481a72dd0d1ca28fc9f&t=1621589807" alt=""><ul><li>判定：fy 存在且有界或fy连续</li></ul></li> <li>证明思路：<ol><li>初值问题的解等价于微分方程<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.27.png?sign=158017bb129ad082282526bd20dac4b3&t=1621589820" alt="">的连续解</li><li>构造近似解函数列{φn(x)}</li><li>函数列{φn(x)}在[x0-h,h0+h]上一致收敛于φ(x)</li><li>φ(x)是积分方程定义于[x0-h,h0+h]上的连续解且唯一</li></ol></li></ul><h3>解的延拓</h3><ul><li>根据解的存在唯一性定理，其解的存在唯一区间为|x-x0|<=h而h可能随<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.28.png?sign=15c57b0fc26fa631eb80c5d94e56f991&t=1621589832" alt="">增大而减小，即定义域的扩展可能会导致解的存在唯一空间减小。</li><li>解的延拓定理：f(x,y)在有界区域G上连续，且满足局部Lipschitz条件，则方程过<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.29.png?sign=6c53b4f52214e02304df11e07d2ed1c7&t=1621589846" alt="">的解y=φ(x)可延拓，直至(x,φ(x))无限接近G边界</li></ul><h3>解对初值的性质</h3><ul><li>考虑初值时，可将解看作<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.30.png?sign=16bfcd17aa11ef01a05dc365eb926ba8&t=1621589875" alt=""></li><li>解关于初值的对称性：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.31.png?sign=10933399aba7d895143348aeedacc4af&t=1621589889" alt=""></li><li>解对初值的连续性：<ul><li>解对初值的连续性定理：<ul><li>解对初值的连续性定理:f(x,y)在区域内连续则其解函数<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.32.png?sign=bc1e90f203033e4d4d055e5a2607bfe8&t=1621589922" alt="">在它的存在范围内连续</li><li>解对初值和参数的连续性定理：f(x,y,λ)在区域内连续则其解函数<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.33.png?sign=783fff360f605d82c00f571ad0b7effd&t=1621589937" alt="">在它的存在范围内连续</li><li>解对初值可微：f(x,y)及关于y的偏导都在区域G内连续，则解<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/2.34.png?sign=675106acc4e1708544ab80faeb516963&t=1621589951" alt="">连续可微</li></ul></li></ul></li></ul>
 
 
 
 
 
-<h3>线性微分方程一般理论</h3>
-<ul>
-    <li>一般形式（要求各阶导数的次数为1）：
-        <ul>
-            <li>齐次：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.1.png?sign=5429faff0b9aa02ec3020e91b0f31aa1&t=1621590223" alt=""></li>
-            <li>非齐次：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.2.png?sign=e74665b95bfe1f01db9916e662a062b0&t=1621590234" alt=""></li>
-        </ul>
-    </li>
-    <li>解的存在唯一性定理（对于一组微分初值）</li>
-    <li>齐次线性微分方程解的性质与结构
-        <ul>
-            <li>叠加原理：若<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.2.png?sign=e74665b95bfe1f01db9916e662a062b0&t=1621590234" alt="">是原线性微分方程的解，则他们的线性组合<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.4.png?sign=5341e7125883141869343af55184995e&t=1621590270" alt="">也是原线性微分方程的解</li>
-            <li>线性相关：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.5.png?sign=8f1b311fe2c690003f051f960755bfb8&t=1621590291" alt="">不全为0，<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.6.png?sign=2993a0a9d8ab9aa304f32c346882acb8&t=1621590305" alt=""></li>
-            <li>Wronsky行列式：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.7.png?sign=77f9a22b68958acd4ed37431830fbcc0&t=1621590322" alt=""><img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.8.png?sign=7a00ad7c5de138222bb470a5aa5e8bb2&t=1621590336" alt=""></li>
-            <li>n阶齐次线性方程一定存在n个线性无关的解</li>
-            <li>通解基本结构：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.9.png?sign=71aa5e9d7bbb1f3418897433b68bb06a&t=1621590349" alt="">为一组线性无关的解（基本解组）</li>
-            <li><img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.10.png?sign=bc3d2df0dd6505961790e7b0bab9abdb&t=1621590383" alt=""></li>
-        </ul>
-    </li>
-    <li>非齐次线性微分方程解与常数变易法
-        <ul>
-            <li>解的和、差亦为原方程解</li>
-            <li>通解基本结构：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.11.png?sign=736cdc656d94deb697ce3dd6a3bce34f&t=1621590404" alt=""></li>
-            <li>常数变易法：
-                <ul>
-                    <li><img src="3.12.png" alt=""></li>
-                    <li>对原微分方程求n-1阶导数，并代入原方程，得到线性方程组：<img src="3.13.png" alt=""></li>
-                    <li>解线性方程组，得到<img src="3.14.png" alt=""></li>
-                    <li><img src="3.15.png" alt="">，<img src="3.16.png" alt="">的代数余子式，可据此快速求得（如果矩阵小的话）</li>
-                    <li>得到通解：<img src="3.17.png" alt=""></li>
-                    <li>若要得到特解，即给出γi的值</li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-</ul>
+<h3>线性微分方程一般理论</h3><ul><li>一般形式（要求各阶导数的次数为1）：<ul><li>齐次：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.1.png?sign=5429faff0b9aa02ec3020e91b0f31aa1&t=1621590223" alt=""></li><li>非齐次：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.2.png?sign=e74665b95bfe1f01db9916e662a062b0&t=1621590234" alt=""></li></ul></li><li>解的存在唯一性定理（对于一组微分初值）</li><li>齐次线性微分方程解的性质与结构<ul><li>叠加原理：若<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.2.png?sign=e74665b95bfe1f01db9916e662a062b0&t=1621590234" alt="">是原线性微分方程的解，则他们的线性组合<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.4.png?sign=5341e7125883141869343af55184995e&t=1621590270" alt="">也是原线性微分方程的解</li><li>线性相关：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.5.png?sign=8f1b311fe2c690003f051f960755bfb8&t=1621590291" alt="">不全为0，<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.6.png?sign=2993a0a9d8ab9aa304f32c346882acb8&t=1621590305" alt=""></li><li>Wronsky行列式：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.7.png?sign=77f9a22b68958acd4ed37431830fbcc0&t=1621590322" alt=""><img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.8.png?sign=7a00ad7c5de138222bb470a5aa5e8bb2&t=1621590336" alt=""></li><li>n阶齐次线性方程一定存在n个线性无关的解</li><li>通解基本结构：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.9.png?sign=71aa5e9d7bbb1f3418897433b68bb06a&t=1621590349" alt="">为一组线性无关的解（基本解组）</li><li><img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.10.png?sign=bc3d2df0dd6505961790e7b0bab9abdb&t=1621590383" alt=""></li></ul></li><li>非齐次线性微分方程解与常数变易法<ul><li>解的和、差亦为原方程解</li><li>通解基本结构：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.11.png?sign=736cdc656d94deb697ce3dd6a3bce34f&t=1621590404" alt=""></li><li>常数变易法：<ul><li><img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.12.png?sign=b1e4e2be8bb0da74a6ce44459aa1fa16&t=1621600499" alt=""></li><li>对原微分方程求n-1阶导数，并代入原方程，得到线性方程组：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.13.png?sign=e61448c1d7d732fd4fde6f569577a2e4&t=1621600508" alt=""></li><li>解线性方程组，得到<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.14.png?sign=7fcf8abe52c881cc7d342f690fd66dbf&t=1621600527" alt=""></li><li><img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.15.png?sign=9109dfa15a674537deffef0a3a2c167b&t=1621600545" alt="">，<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.16.png?sign=0c5cbbdbf7095d583141852d25a70056&t=1621600572" alt="">的代数余子式，可据此快速求得（如果矩阵小的话）</li><li>得到通解：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.17.png?sign=3b7d14f53899a059d075a2e565dfcb1c&t=1621600584" alt=""></li><li>若要得到特解，即给出γi的值</li></ul></li></ul></li></ul>
+
+
 <h3>常系数线性微分方程的解法</h3>
 <ul>
-    <li>复值函数：<img src="3.18.png" alt=""></li>
+    <li>复值函数：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.18.png?sign=8f6b13a4b321e8a5c0f6f8999ed190f3&t=1621600595" alt=""></li>
     <li>复值指数函数：
         <ul>
-            <li><img src="3.19.png" alt=""></li>
-            <li>欧拉公式：<img src="3.20.png" alt=""></li>
+            <li><img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.19.png?sign=e5809db3589e170436c17556608b20d7&t=1621600605" alt=""></li>
+            <li>欧拉公式：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.20.png?sign=f9e045f675c5400480a9df4fd4e3bf82&t=1621600620" alt=""></li>
         </ul>
     </li>
-    <li>复值解：<img src="3.21.png" alt="">,z(t)为定义在[a,b]上以t为实变量的复值函数<ul>
+    <li>复值解：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.21.png?sign=ddbc19ac9fd0dfdda96b98c323b547de&t=1621600632" alt="">,z(t)为定义在[a,b]上以t为实变量的复值函数<ul>
         <li>
             当f(t)=0(齐次)，ai（t）均为实值函数，则复值函数的实部、虚部、共轭复数也均是原微分方程的解
         </li>
-        <li>当<img src="3.22.png" alt="">，ai（t）均为实值函数，则复值函数的<ul>
-            <li>实部U（t）为<img src="3.23.png" alt=""></li>
-            <li>虚部V（t）为<img src="3.24.png" alt=""></li>
+        <li>当<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.22.png?sign=ac2ed3394ead4f80c8775873bed046b2&t=1621600645" alt="">，ai（t）均为实值函数，则复值函数的<ul>
+            <li>实部U（t）为<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.23.png?sign=05d9d429212b85646967300e0113e947&t=1621600655" alt=""></li>
+            <li>虚部V（t）为<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/3.24.png?sign=6da916cdc8cc4d40ae0494f919d4fa13&t=1621600666" alt=""></li>
         </ul></li>
     </ul></li>
     <li>常系数线性方程求解<ul>
@@ -228,6 +158,7 @@
         </ul></li>
     </ul></li>
 </ul>
+
 <h3>降阶与幂级数解法</h3>
 <ul>
     <li>
@@ -365,8 +296,8 @@
     <li>一般高阶微分方程转化为微分方程组</li>
     <li>自治系统（驻定方程组）：右端不显含t</li>
     <li>稳定性：<ul>
-        <li>稳定：<img src="5.1.png" alt="">对任意t>t0恒成立</li>
-        <li>渐进稳定：稳定，且<img src="5.2.png" alt=""></li>
+        <li>稳定：<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/5.1.png?sign=51e337d19eea27d690915c5024b45b90&t=1621601634" alt="">对任意t>t0恒成立</li>
+        <li>渐进稳定：稳定，且<img src="https://7973-ysx0827-plc6r-1301864888.tcb.qcloud.la/sections/5.2.png?sign=81c53281e2645e211ff6d0aa7b08f9da&t=1621601642" alt=""></li>
         <li>零解渐进稳定：上式中x0=0</li>
     </ul></li>
 </ul>
